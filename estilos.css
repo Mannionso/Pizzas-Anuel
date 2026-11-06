@@ -1,0 +1,388 @@
+
+//Estilos Para Pizza Anuel
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+//Encabezado
+
+header {
+    background-color: #9e1010;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #ffcc00;
+}
+
+header h1 {
+    color: white;
+    font-size: 45px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #ffcc00;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+//Barra de navegacion
+
+nav {
+    background-color: #202020;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+//Contenido
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    flex: 1;
+}
+
+main > h2 {
+    color: #ffcc00;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #a71919;
+}
+
+/* SECCIONES */
+
+section {
+    background-color: #252525;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #b71919;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+section h2 {
+    color: #ffcc00;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #ffcc00;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    text-align: justify;
+}
+
+/* PRECIOS */
+
+section strong {
+    color: #ffcc00;
+    font-size: 21px;
+}
+
+
+
+.producto {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 15px 25px;
+    align-items: start;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    border-left-color: #ffcc00;
+}
+
+/* IMÁGENES DE LOS PRODUCTOS */
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-row: 1 / 4;
+}
+
+.producto h3 {
+    margin: 0;
+}
+
+.producto p {
+    margin: 0;
+}
+
+//Pagina de contacto
+
+address {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+    font-style: normal;
+}
+
+main a {
+    color: #ffcc00;
+}
+
+main a:hover {
+    color: #ffffff;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #9e1010;
+    text-align: center;
+    padding: 25px;
+    border-top: 4px solid #ffcc00;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .producto {
+        display: block;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        margin-bottom: 15px;
+    }
+
+    .producto h3,
+    .producto p {
+        margin-bottom: 12px;
+    }
+
+    section p {
+        text-align: left;
+    }
+}
+
+
+/* ESPACIADO GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header {
+    text-align: center;
+    background-color: #9e1010;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+
+
+nav {
+    background-color: #252525;
+    text-align: center;
+    padding: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+/* SECCIONES */
+
+section {
+    background-color: #252525;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border-left: 5px solid #b71919;
+}
+
+section h2,
+section h3 {
+    color: #ffcc00;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+
+main > h2 {
+    color: #ffcc00;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* PRECIOS */
+
+section strong {
+    color: #ffcc00;
+    font-size: 21px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #9e1010;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* PRODUCTOS DEL MENÚ */
+
+.producto {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.producto img {
+    width: 280px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.producto div {
+    flex: 1;
+    min-width: 0;
+}
+
+.producto h3 {
+    margin-bottom: 15px;
+}
+
+.producto p {
+    margin-bottom: 18px;
+}
+
+/* PARA PANTALLAS PEQUEÑAS */
+
+@media (max-width: 700px) {
+    .producto {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .producto img {
+        width: 100%;
+        height: auto;
+    }
+}
+
